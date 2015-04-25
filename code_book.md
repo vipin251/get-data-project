@@ -80,3 +80,4 @@
 79 freequencybodybodyaccelerationjerkmagstandarddeviation
 80 freequencybodybodygyroscopemagstandarddeviation       
 81 freequencybodybodygyroscopejerkmagstandarddeviation   
+
