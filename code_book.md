@@ -1,4 +1,6 @@
- Variables in the final_mean_df tidy data set
+### Variables in the final_mean_df tidy data set
+Variables from [3] to [84] start with 
+ 
  [1] "subject"                                               
  [2] "activity"                                              
  [3] "timebodyaccelerationmeanx"                             
