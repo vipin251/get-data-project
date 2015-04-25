@@ -13,12 +13,12 @@ run_analysis.R contains the r-script to merge and clean the data files from this
     * Merge subject_test.txt, X_test.txt, y_test.txt using column binding and do the same operations on train files
     * Then combine the two merged files from above step into a single large data set consists of 10299 rows and 563   columns
     *  Assign column names to the combined data set using the variable names from feature.txt
-    * Select variables containing the mean and standard deviation readings. (Used the mean, Mean and std to select the variables). There are 86 variables containing mean and standard deviation data. So the dimension of this data set is 10299 x 88.
+    * Select only mean and standard deviation readings from the large combined data set. (Used the mean() and std() to select the variables). There are 79 variables containing mean and standard deviation data. So the dimension of this data set is 10299 x 81 (including the subject and activity columns).
     * Replace the activity label with descriptive names using the data from activity_labels.txt
     * Arrange in ascending order of suject id
     * Find mean of each variable for each activity and each subject and make a tidy data set. The tidy data set has a dimension of 180 x 80. Each variable is in one column and each observation is in different row
     * Clean and re-arrange column names of final tidy data set and make it descriptive and lower case. Abbreviations like "t", "f", "std", "Acc", "Gyro" are replaced with "time", "freequency", "standarddeviation", "acceleration", "gyroscope" respectively.
-    * 
+    * Write the obtained tidy data set using write.table function with file name "tidy_data.txt"
 
 
 
