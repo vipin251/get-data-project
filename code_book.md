@@ -2,22 +2,22 @@ Variables in the final_mean_df tidy data set
 
 Variables from 3 to 84 start with time or freequency and ends with x, y or z
 
-1 subject
-2 activity
-3 timebodyaccelerationmeanx
-4 timebodyaccelerationmeany
-5 timebodyaccelerationmeanz
-6 timegravityaccelerationmeanx
-7 timegravityaccelerationmeany
-8 timegravityaccelerationmeanz
-9 timebodyaccelerationjerkmeanx
-10 timebodyaccelerationjerkmeany
-11 timebodyaccelerationjerkmeanz
-12 timebodygyroscopemeanx
-13 timebodygyroscopemeany
-14 timebodygyroscopemeanz
-15 timebodygyroscopejerkmeanx
-16 timebodygyroscopejerkmeany
+1. subject
+2. activity
+3. timebodyaccelerationmeanx
+4. timebodyaccelerationmeany
+5. timebodyaccelerationmeanz
+6. timegravityaccelerationmeanx
+7. timegravityaccelerationmeany
+8. timegravityaccelerationmeanz
+9. timebodyaccelerationjerkmeanx
+10. timebodyaccelerationjerkmeany
+11. timebodyaccelerationjerkmeanz
+12. timebodygyroscopemeanx
+13. timebodygyroscopemeany
+14. timebodygyroscopemeanz
+15. timebodygyroscopejerkmeanx
+16. timebodygyroscopejerkmeany
 17 timebodygyroscopejerkmeanz
 18 timebodyaccelerationmagmean
 19 timegravityaccelerationmagmean
