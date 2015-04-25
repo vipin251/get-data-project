@@ -69,7 +69,7 @@ setnames(final_mean_df, names(final_mean_df), bad_colnames)
 subject <- final_mean_df[,2, with = F]
 mean_without_sub <- final_mean_df[,-2, with = F]
 final_mean_df <- cbind(subject, mean_without_sub)
-
+#remove unwanted intermediate files
 rm("filtered", "mean_without_sub" , "subject", "temp", "bad_colnames","i")
 View(final_mean_df)
 write.table(final_mean_df, file = "tidy_data.txt", row.names = F)
