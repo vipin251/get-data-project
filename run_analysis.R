@@ -27,33 +27,28 @@ final_without_colnames <- rbind(test_with_suject_id, train_with_subject_id)
 colnames(final_without_colnames)  <- c("subject","activity", as.character(features$V2))
 
 #select only mean and std deviation columns
-subset_mean <- grep("mean", colnames(final_without_colnames))
-select_means <- final_without_colnames[,c(1,2,subset_mean)]
-subset_std <- grep("std", colnames(final_without_colnames))
-tidy_data <- cbind(select_means, final_without_colnames[,c(subset_std)])
+subset_mean_std <- grep("[Mm]ean()|std()", colnames(final_without_colnames))
+merged_df <- final_without_colnames[,c(1,2,subset_mean_std)]
 
 #replace the activity id with descriptive names
 for(i in labels$V1){
-        tidy_data$activity <- gsub( i, labels[i, 2], tidy_data$activity)
+        merged_df$activity <- gsub( i, labels[i, 2], merged_df$activity)
 }
-#Arrange based on suject 
-tidy_data <- arrange(tidy_data, subject)
-
 #remove unwanted intermediate files from env
 rm( "x_subject_test", "x_subject_train","x_test","x_train","y_test","y_train", 
     "final_without_colnames", "test_with_activity_id", "test_with_suject_id", 
-    "train_with_activity_id", "train_with_subject_id", "i", "subset_mean", "subset_std",
+    "train_with_activity_id", "train_with_subject_id", "i", "subset_mean_std", 
     "select_means", "features",  "labels")
 
-# find mean of each variable for each activity and each subject
-final_mean_df <- data.frame()
+#Find mean of each variable for each activity and each subject
+tidy_data_means <- data.frame()
 for(i in 1:30){        
-filtered <- filter((tidy_data), subject == i)
+filtered <- filter((merged_df), subject == i)
 temp <- as.data.table(filtered)[, lapply(.SD, mean), by=activity]
-final_mean_df <- rbind(final_mean_df, temp)
+tidy_data_means <- rbind(tidy_data_means, temp)
 }
 #Clean column names and make it descriptive and lower case
-bad_colnames <- names(final_mean_df)
+bad_colnames <- names(tidy_data_means)
 bad_colnames <- gsub("^t", "time", bad_colnames)
 bad_colnames <- gsub("^f", "freequency", bad_colnames)
 bad_colnames <- gsub("std", "standarddeviation", bad_colnames)
@@ -64,15 +59,18 @@ bad_colnames <- gsub(",", "", bad_colnames)
 bad_colnames <- gsub("[\\()]", "", bad_colnames)
 bad_colnames <- gsub("-", "", bad_colnames)
 bad_colnames <- tolower(bad_colnames)
-setnames(final_mean_df, names(final_mean_df), bad_colnames)
+setnames(tidy_data_means, names(tidy_data_means), bad_colnames)
 #Re-arranging the columns
-subject <- final_mean_df[,2, with = F]
-mean_without_sub <- final_mean_df[,-2, with = F]
-final_mean_df <- cbind(subject, mean_without_sub)
-#remove unwanted intermediate files
+subject <- tidy_data_means[,2, with = F]
+mean_without_sub <- tidy_data_means[,-2, with = F]
+tidy_data_means <- cbind(subject, mean_without_sub)
+#Remove unwanted intermediate files
 rm("filtered", "mean_without_sub" , "subject", "temp", "bad_colnames","i")
-View(final_mean_df)
-write.table(final_mean_df, file = "tidy_data.txt", row.names = F)
+View(tidy_data_means)
+write.table(tidy_data_means, file = "tidy_data.txt", row.names = F)
 
+#To the peer reviewer: code to read the output file produced by run_analysis.R
+# remove the "#" symbol and run the following line of code
 
+#tidy_output <- read.table("tidy_data.txt", header = T); View (tidy_output)
 
