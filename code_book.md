@@ -1,5 +1,5 @@
 ### Variables in the final_mean_df tidy data set
-Variables from [3] to [84] start with 
+Variables from [3] to [84] start with time or freequency and ends with x, y or z
  
  [1] "subject"                                               
  [2] "activity"                                              
