@@ -17,7 +17,8 @@ run_analysis.R contains the r-script to merge and clean the data files from this
     * Replace the activity label with descriptive names using the data from activity_labels.txt
     * Arrange in ascending order of suject id
     * Find mean of each variable for each activity and each subject and make a tidy data set. The tidy data set has a dimension of 180 x 80. Each variable is in one column and each observation is in different row
-    * Clean and re-arrange column names of final tidy data set and make it descriptive and lower case. Abbreviations like "t", "f", "std", "Acc", "Gyro"
+    * Clean and re-arrange column names of final tidy data set and make it descriptive and lower case. Abbreviations like "t", "f", "std", "Acc", "Gyro" are replaced with "time", "freequency", "standarddeviation", "acceleration", "gyroscope" respectively.
+    * 
 
 
 
