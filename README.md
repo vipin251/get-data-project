@@ -11,8 +11,11 @@ run_analysis.R contains the r-script to merge and clean the data files from this
   * The run_analysis will perform following actions on the fileset
     * Read features.txt, activity_labels.txt,  subject_test.txt, X_test.txt, y_test.txt, subject_train.txt, X_train.txt, y_train.txt
     * Merge subject_test.txt, X_test.txt, y_test.txt using column binding and do the same operations on train files
-    * Then combine the merged file from above step into a single large data set consists of 10299 rows and 563 columns
-    * 
+    * Then combine the two merged files from above step into a single large data set consists of 10299 rows and 563   columns
+    *  Assign column names to the combined data set using the variable names from feature.txt
+    * Select variables containing the mean and standard deviation readings. (Used the mean, Mean and std to select the variables)
+    * Replace the activity label with descriptive names using the data from activity_labels.txt
+    * Arrange the tidy data in ascending order of suject id
 
 
 
