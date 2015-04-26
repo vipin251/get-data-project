@@ -1,5 +1,6 @@
 ## Project Description
-The project uses the raw data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. Unzipp the file and read the readme.txt file to know in detail how raw data is generated. *This project aims to merge the test and train data sets and select only features containing mean and standard deviation from 561 availbale features, make it tidy according to Hadley Wickham's tidy data principles( Ref No. 2:List given at the bottom of this code book), add descriptive variable names and activity labesl, creates a second, independent tidy data set with the average of each variable for each activity and each subject*
+
+*This project aims to merge the test and train data sets available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and select only features containing mean and standard deviation from 561 availbale features, make it tidy according to Hadley Wickham's tidy data principles( Ref No. 2:List given at the bottom of this code book), add descriptive variable names and activity labesl, creates a second, independent tidy data set with the average of each variable for each activity and each subject*. Download and unzip the file and read the readme.txt file to know in detail how raw data is generated. 
 
 
 ## Study design and data processing
