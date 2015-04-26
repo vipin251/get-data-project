@@ -100,7 +100,7 @@ Variables from 3 to 84 start with time or freequency and ends with x, y or z
 41. TimeBodyGyroscopeJerkMagnitudeMean                          
 42. TimeBodyGyroscopeJerkMagnitudeStandardDeviation             
 43. FreequencyBodyAccelerationMeanX                             
-44 .FreequencyBodyAccelerationMeanY                             
+44. FreequencyBodyAccelerationMeanY                             
 45. FreequencyBodyAccelerationMeanZ                             
 46. FreequencyBodyAccelerationStandardDeviationX                
 47. FreequencyBodyAccelerationStandardDeviationY                
