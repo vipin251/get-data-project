@@ -1,6 +1,7 @@
 #Require dplyr and data.table packages
 library(dplyr)
 library(data.table)
+#Copy all 8 files to your working directory and run this script 
 #read  features and labels 
 features <- read.table("features.txt", header = F, stringsAsFactors = F, sep = " ")
 labels <- read.table("activity_labels.txt", header = F, stringsAsFactors = F, sep = " ")
