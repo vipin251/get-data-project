@@ -41,13 +41,14 @@ Some information on the variable including:
  - Unit of measurement (if no unit of measurement list this as well)
  - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
 
-### Variables in the final_mean_df tidy data set
+### Variables in the tidy_data_means/ tidy_data.txt set
 1. subject
  * contains the id of the person performed the taskes. Value varies from 1 to 30. Each subject performed six activities
   * Class of the variable: Integer
 2. activiy
- * Contains the activity label performed by the subject. There are six levels STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS. 
-  * Class: Factors
+ * Contains the activity label performed by the subject. 
+ * There are six levels STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS. 
+ * Class: Factors
 3. TimeBodyAccelerationMeanX
  * Contains the mean of time domain of body acceleration mean along X axis
  * Class: numeric
@@ -84,12 +85,24 @@ Some information on the variable including:
 14. TimeGravityAccelerationStandardDeviationZ
  * Contains the mean of time domain of gravity acceleration standard deviation along Z axis
  * Class: numeric
-15. TimeBodyAccelerationJerkMeanX                               
-16. TimeBodyAccelerationJerkMeanY                               
-17. TimeBodyAccelerationJerkMeanZ                               
-18. TimeBodyAccelerationJerkStandardDeviationX                  
-19. TimeBodyAccelerationJerkStandardDeviationY                  
-20. TimeBodyAccelerationJerkStandardDeviationZ                  
+15. TimeBodyAccelerationJerkMeanX
+ * Contains the mean of time domain of body acceleration jerk mean along X axis
+ * Class: numeric
+16. TimeBodyAccelerationJerkMeanY
+ * Contains the mean of time domain of body acceleration jerk mean along Y axis
+ * Class: numeric
+17. TimeBodyAccelerationJerkMeanZ
+ * Contains the mean of time domain of body acceleration jerk mean along Z axis
+ * Class: numeric
+18. TimeBodyAccelerationJerkStandardDeviationX
+ * Contains the mean of time domain body acceleration jerk standard deviation along X axis
+ * class: numeric
+19. TimeBodyAccelerationJerkStandardDeviationY
+ * Contains the mean of time domain body acceleration jerk standard deviation along Y axis
+ * class: numeric
+20. TimeBodyAccelerationJerkStandardDeviationZ
+ * Contains the mean of time domain body acceleration jerk standard deviation along Y axis
+ * class: numeric
 21. TimeBodyGyroscopeMeanX                                      
 22. TimeBodyGyroscopeMeanY                                      
 23. TimeBodyGyroscopeMeanZ                                      
