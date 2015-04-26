@@ -228,7 +228,7 @@ Some information on the variable including:
  * Contains the mean of freequency domain of body angular velocity mean along X axis
  * Class: numeric
 62. FreequencyBodyGyroscopeMeanY
-* Contains the mean of freequency domain of body angular velocity mean along Y axis
+ * Contains the mean of freequency domain of body angular velocity mean along Y axis
  * Class: numeric
 63. FreequencyBodyGyroscopeMeanZ
  * Contains the mean of freequency domain of body angular velocity mean along Z axis
