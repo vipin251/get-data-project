@@ -34,6 +34,8 @@ The run_analysis.R merges training and test data and creates a second, independe
  - Dimensions of the dataset : 180 x 88
 
 ### Variables in the tidy_data_means/ tidy_data.txt set
+ ** Variable from 3 to 88 are mean values of readings from the gyroscope and accelerometer of Samsung Galaxy S II while performing the activities. Values are normalized and bound within [-1, 1]**
+ 
 1. subject
  * contains the id of the person performed the taskes. Value varies from 1 to 30. Each subject performed six activities
   * Class of the variable: Integer
@@ -41,7 +43,6 @@ The run_analysis.R merges training and test data and creates a second, independe
  * Contains the activity label performed by the subject. 
  * There are six activities STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS performed by each subject. So 30 x 6 makes 180 different observations in different rows. 
  * Class: Character
-** Variable from 3 to 88 are mean values of readings from the gyroscope and accelerometer of Samsung Galaxy S II while performing above 6 activities. Values are normalized and bound within [-1, 1]**
 3. TimeBodyAccelerationMeanX
  * Contains the mean of time domain of body acceleration mean along X axis of the phone
  * Class: numeric
