@@ -1,14 +1,14 @@
 ## Project Description
-The project uses the raw data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. Unzipp the file and read the readme.txt file to know in detail how raw data is generated. *This project aims to merge the test and train data sets and select only features containing mean and standard deviation from 561 availbale features, make it tidy according to Hadley Wickham's tidy data principles, add descriptive variable names and activity labesl, creates a second, independent tidy data set with the average of each variable for each activity and each subject*
+The project uses the raw data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. Unzipp the file and read the readme.txt file to know in detail how raw data is generated. *This project aims to merge the test and train data sets and select only features containing mean and standard deviation from 561 availbale features, make it tidy according to Hadley Wickham's tidy data principles( Ref No. 2:List given at the bottom of this code book), add descriptive variable names and activity labesl, creates a second, independent tidy data set with the average of each variable for each activity and each subject*
 
 
-##Study design and data processing
+## Study design and data processing
  
-###Collection of the raw data 
+### Collection of the raw data 
 Please read the readme.txt available at the above link for more detailed description. 
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, data generated for 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz _(Copied from the readme.txt file from tha above link)_ 
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, data generated for 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz _(Copied from the readme.txt file from tha above link)_.
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. _(Copied from the readme.txt file from tha above link)_ .
 
 For each record it is provided:
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
@@ -19,34 +19,43 @@ For each record it is provided:
  
 
  
-###Guide to create the tidy data file
+### Guide to create the tidy data file
 * Download the data 
 * Unzipp the files to your working direcotry
 * Copy the features.txt, activity_labels.txt and files in the test and train folders (files in the inertia folders are not required) in to your working directory
 * Run the r script run_analysis.R
  
-###Cleaning of the data
+### Cleaning of the data
 The run_analysis.R merges training and test data and creates a second, independent tidy data set with the average of each variable for each activity and each subject. Please read the README.md available at the below link for more detailed description of the cleaning and merging process
  [https://github.com/vipin251/get-data-project/blob/master/README.md]()
  
-##Description of the variables in the tidy_data.txt file
+## Description of the variables in the tidy_data.txt file
  - Dimensions of the dataset : 180 x 88
  - Summary of variables 
  - 
  
-###Variable 1 (repeat this section for all variables in the dataset)
+### Variable 1 (repeat this section for all variables in the dataset)
 Some information on the variable including:
  - Class of the variable
  - Unique values/levels of the variable
  - Unit of measurement (if no unit of measurement list this as well)
  - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
 
-Variables in the final_mean_df tidy data set
+### Variables in the final_mean_df tidy data set
 
 Variables from 3 to 84 start with time or freequency and ends with x, y or z
 
-1. subject
-2. activity
+1. subject: 
+  * contains the id of the person performed the taskes. Value varies from 1 to 30. Each subject performed six activities
+  * Class of the variable: Integer
+2. activity:
+  * Contains the activity label performed by the subject. There are six levels STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS. 
+  * Class: Factors
+
+* Variables from 3 to 88 has some common feattures.
+  * It contains the means of the variable described.
+  * Starts with "Time" :- represents the time domain
+  * Starts with Freequency:- represents the freequency domain.
 3. TimeBodyAccelerationMeanX
 4. TimeBodyAccelerationMeanY
 5. TimeBodyAccelerationMeanZ
