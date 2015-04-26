@@ -53,88 +53,98 @@ Variables from 3 to 84 start with time or freequency and ends with x, y or z
   * Class: Factors
 
 * Variables from 3 to 88 has some common feattures.
-  * It contains the means of the variable described.
+  * Its the means of the variable described.
   * Starts with "Time" :- represents the time domain
   * Starts with Freequency:- represents the freequency domain.
-3. TimeBodyAccelerationMeanX
-4. TimeBodyAccelerationMeanY
-5. TimeBodyAccelerationMeanZ
-6. TimeGravityAccelerationMeanX
-7. TimeGravityAccelerationMeanY
-8. TimeGravityAccelerationMeanZ
-9. TimeBodyAccelerationJerkMeanX
-10. TimeBodyAccelerationJerkMeanY
-11. TimeBodyAccelerationJerkMeanZ
-12. TimeBodyGyroscopeMeanX
-13. TimeBodyGyroscopeMeanY
-14. TimeBodyGyroscopeMeanZ
-15. TimeBodyGyroscopeJerkMeanX
-16. TimeBodyGyroscopeJerkMeanY
-17. TimeBodyGyroscopeJerkMeanZ
-18. TimeBodyAccelerationMagnitudeMean
-19. TimeGravityAccelerationMagnitudeMean
-20. TimeBodyAccelerationJerkMagnitudeMean
-21. TimeBodyGyroscopeMagnitudeMean
-22. TimeBodyGyroscopeJerkMagnitudeMean
-23. FreequencyBodyAccelerationMeanX
-24. FreequencyBodyAccelerationMeanY
-25. FreequencyBodyAccelerationMeanZ
-26. FreequencyBodyAccelerationMeanFreequencyX
-27. FreequencyBodyAccelerationMeanFreequencyy
-28. FreequencyBodyAccelerationMeanFreequencyZ
-29. FreequencyBodyAccelerationJerkMeanX
-30. FreequencyBodyAccelerationJerkMeanY
-31. FreequencyBodyAccelerationJerkMeanZ
-32. FreequencyBodyAccelerationJerkMeanFreequencyX
-33. FreequencyBodyAccelerationJerkMeanFreequencyy
-34. FreequencyBodyAccelerationJerkMeanFreequencyZ
-35. FreequencyBodyGyroscopeMeanX
-36. FreequencyBodyGyroscopeMeanY
-37. FreequencyBodyGyroscopeMeanZ
-38. FreequencyBodyGyroscopeMeanFreequencyX
-39. FreequencyBodyGyroscopeMeanFreequencyy
-40. FreequencyBodyGyroscopeMeanFreequencyZ
-41. FreequencyBodyAccelerationMagnitudeMean
-42. FreequencyBodyAccelerationMagnitudeMeanFreequency
-43. FreequencyBodyBodyAccelerationJerkMagnitudeMean
-44. FreequencyBodyBodyAccelerationJerkMagnitudeMeanFreequency
-45. FreequencyBodyBodyGyroscopeMagnitudeMean
-46. FreequencyBodyBodyGyroscopeMagnitudeMeanFreequency
-47. FreequencyBodyBodyGyroscopeJerkMagnitudeMean
-48. FreequencyBodyBodyGyroscopeJerkMagnitudeMeanFreequency
-49. TimeBodyAccelerationStandardDeviationX
-50. TimeBodyAccelerationStandardDeviationY
-51. TimeBodyAccelerationStandardDeviationZ
-52. TimeGravityAccelerationStandardDeviationX
-53. TimeGravityAccelerationStandardDeviationY
-54. TimeGravityAccelerationStandardDeviationZ
-55. TimeBodyAccelerationJerkStandardDeviationX
-56. TimeBodyAccelerationJerkStandardDeviationY
-57. TimeBodyAccelerationJerkStandardDeviationZ
-58. TimeBodyGyroscopeStandardDeviationX
-59. TimeBodyGyroscopeStandardDeviationY
-60. TimeBodyGyroscopeStandardDeviationZ
-61. TimeBodyGyroscopeJerkStandardDeviationX
-62. TimeBodyGyroscopeJerkStandardDeviationY
-63. TimeBodyGyroscopeJerkStandardDeviationZ
-64. TimeBodyAccelerationMagnitudeStandardDeviation
-65. TimeGravityAccelerationMagnitudeStandardDeviation
-66. TimeBodyAccelerationJerkMagnitudeStandardDeviation
-67. TimeBodyGyroscopeMagnitudeStandardDeviation
-68. TimeBodyGyroscopeJerkMagnitudeStandardDeviation
-69. FreequencyBodyAccelerationStandardDeviationX
-70. FreequencyBodyAccelerationStandardDeviationY
-71. FreequencyBodyAccelerationStandardDeviationZ
-72. FreequencyBodyAccelerationJerkStandardDeviationX
-73. FreequencyBodyAccelerationJerkStandardDeviationY
-74. FreequencyBodyAccelerationJerkStandardDeviationZ
-75. FreequencyBodyGyroscopeStandardDeviationX
-76. FreequencyBodyGyroscopeStandardDeviationY
-77. FreequencyBodyGyroscopeStandardDeviationZ
-78. FreequencyBodyAccelerationMagnitudeStandardDeviation
-79. FreequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation 
-80. FreequencyBodyBodyGyroscopeMagnitudeStandardDeviation
-81. FreequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation 
+  * 
+ 1. subject                                                     
+ 2. activity                                                    
+ 3. TimeBodyAccelerationMeanX                                   
+ 4. TimeBodyAccelerationMeanY                                   
+ 5. TimeBodyAccelerationMeanZ                                   
+ 6. TimeBodyAccelerationStandardDeviationX                      
+ 7. TimeBodyAccelerationStandardDeviationY                      
+ 8. TimeBodyAccelerationStandardDeviationZ                      
+ 9. TimeGravityAccelerationMeanX                                
+10. TimeGravityAccelerationMeanY                                
+11. TimeGravityAccelerationMeanZ                                
+12. TimeGravityAccelerationStandardDeviationX                   
+13. TimeGravityAccelerationStandardDeviationY                   
+14. TimeGravityAccelerationStandardDeviationZ                   
+15. TimeBodyAccelerationJerkMeanX                               
+16. TimeBodyAccelerationJerkMeanY                               
+17. TimeBodyAccelerationJerkMeanZ                               
+18. TimeBodyAccelerationJerkStandardDeviationX                  
+19. TimeBodyAccelerationJerkStandardDeviationY                  
+20. TimeBodyAccelerationJerkStandardDeviationZ                  
+21. TimeBodyGyroscopeMeanX                                      
+22. TimeBodyGyroscopeMeanY                                      
+23. TimeBodyGyroscopeMeanZ                                      
+24. TimeBodyGyroscopeStandardDeviationX                         
+25. TimeBodyGyroscopeStandardDeviationY                         
+26. TimeBodyGyroscopeStandardDeviationZ                         
+27. TimeBodyGyroscopeJerkMeanX                                  
+28. TimeBodyGyroscopeJerkMeanY                                  
+29. TimeBodyGyroscopeJerkMeanZ                                  
+30. TimeBodyGyroscopeJerkStandardDeviationX                     
+31. TimeBodyGyroscopeJerkStandardDeviationY                     
+32. TimeBodyGyroscopeJerkStandardDeviationZ                     
+33. TimeBodyAccelerationMagnitudeMean                           
+34. TimeBodyAccelerationMagnitudeStandardDeviation              
+35. TimeGravityAccelerationMagnitudeMean                        
+36. TimeGravityAccelerationMagnitudeStandardDeviation           
+37. TimeBodyAccelerationJerkMagnitudeMean                       
+38. TimeBodyAccelerationJerkMagnitudeStandardDeviation          
+39. TimeBodyGyroscopeMagnitudeMean                              
+40. TimeBodyGyroscopeMagnitudeStandardDeviation                 
+41. TimeBodyGyroscopeJerkMagnitudeMean                          
+42. TimeBodyGyroscopeJerkMagnitudeStandardDeviation             
+43. FreequencyBodyAccelerationMeanX                             
+44 .FreequencyBodyAccelerationMeanY                             
+45. FreequencyBodyAccelerationMeanZ                             
+46. FreequencyBodyAccelerationStandardDeviationX                
+47. FreequencyBodyAccelerationStandardDeviationY                
+48. FreequencyBodyAccelerationStandardDeviationZ                
+49. FreequencyBodyAccelerationMeanFreequencyX                   
+50. FreequencyBodyAccelerationMeanFreequencyY                   
+51. FreequencyBodyAccelerationMeanFreequencyZ                   
+52. FreequencyBodyAccelerationJerkMeanX                         
+53. FreequencyBodyAccelerationJerkMeanY                         
+54. FreequencyBodyAccelerationJerkMeanZ                         
+55. FreequencyBodyAccelerationJerkStandardDeviationX            
+56. FreequencyBodyAccelerationJerkStandardDeviationY            
+57. FreequencyBodyAccelerationJerkStandardDeviationZ            
+58. FreequencyBodyAccelerationJerkMeanFreequencyX               
+59. FreequencyBodyAccelerationJerkMeanFreequencyY               
+60. FreequencyBodyAccelerationJerkMeanFreequencyZ               
+61. FreequencyBodyGyroscopeMeanX                                
+62. FreequencyBodyGyroscopeMeanY                                
+63. FreequencyBodyGyroscopeMeanZ                                
+64. FreequencyBodyGyroscopeStandardDeviationX                   
+65. FreequencyBodyGyroscopeStandardDeviationY                   
+66. FreequencyBodyGyroscopeStandardDeviationZ                   
+67. FreequencyBodyGyroscopeMeanFreequencyX                      
+68. FreequencyBodyGyroscopeMeanFreequencyY                      
+69. FreequencyBodyGyroscopeMeanFreequencyZ                      
+70. FreequencyBodyAccelerationMagnitudeMean                     
+71. FreequencyBodyAccelerationMagnitudeStandardDeviation        
+72. FreequencyBodyAccelerationMagnitudeMeanFreequency           
+73. FreequencyBodyBodyAccelerationJerkMagnitudeMean             
+74. FreequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation
+75. FreequencyBodyBodyAccelerationJerkMagnitudeMeanFreequency   
+76. FreequencyBodyBodyGyroscopeMagnitudeMean                    
+77. FreequencyBodyBodyGyroscopeMagnitudeStandardDeviation       
+78. FreequencyBodyBodyGyroscopeMagnitudeMeanFreequency          
+79. FreequencyBodyBodyGyroscopeJerkMagnitudeMean                
+80. FreequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation   
+81. FreequencyBodyBodyGyroscopeJerkMagnitudeMeanFreequency      
+82. AngleTimeBodyAccelerationMeanGravity                        
+83. AngleTimeBodyAccelerationJerkMeanGravityMean                
+84. AngleTimeBodyGyroscopeMeanGravityMean                       
+85. AngleTimeBodyGyroscopeJerkMeanGravityMean                   
+86. AngleXGravityMean                                           
+87. AngleYGravityMean                                           
+88. AngleZGravityMean
 
 ## Sources
 1. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
