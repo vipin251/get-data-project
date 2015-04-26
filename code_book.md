@@ -22,10 +22,10 @@ For each record it is provided:
  
 ### Guide to create the tidy data file
 * Download the data 
-* Unzipp the files to your working direcotry
-* Copy the features.txt, activity_labels.txt and files in the test and train folders (files in the inertia folders are not required) in to your working directory
+* Unzipp the files 
+* Set UCI HAR Dataset as your working directory
 * Run the r script run_analysis.R
-* 
+* Files in the Inertial Signals folders are not considered in this script
  
 ### Cleaning of the data
 The run_analysis.R merges training and test data and creates a second, independent tidy data set with the average of each variable for each activity and each subject. Please read the README.md available [here] (https://github.com/vipin251/get-data-project/blob/master/README.md) the below link for more detailed description of the cleaning and merging process
