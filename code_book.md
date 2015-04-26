@@ -42,24 +42,48 @@ Some information on the variable including:
  - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
 
 ### Variables in the final_mean_df tidy data set
-
-Variables from 3 to 84 start with time or freequency and ends with x, y or z
-
-
 1. subject
+ * contains the id of the person performed the taskes. Value varies from 1 to 30. Each subject performed six activities
+  * Class of the variable: Integer
 2. activiy
-3. TimeBodyAccelerationMeanX                                   
-4. TimeBodyAccelerationMeanY                                   
-5. TimeBodyAccelerationMeanZ                                   
-6. TimeBodyAccelerationStandardDeviationX                      
-7. TimeBodyAccelerationStandardDeviationY                      
+ * Contains the activity label performed by the subject. There are six levels STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS. 
+  * Class: Factors
+3. TimeBodyAccelerationMeanX
+ * Contains the mean of time domain of body acceleration mean along X axis
+ * Class: numeric
+4. TimeBodyAccelerationMeanY
+ * Contains the mean of time domain of body acceleration mean along Y axis
+ * Class: numeric
+5. TimeBodyAccelerationMeanZ
+ * Contains the mean of time domain of body acceleration mean along X axis
+ * Class: numeric
+6. TimeBodyAccelerationStandardDeviationX
+ * Contains the mean of time domain body acceleration stadard deviation along X axis
+ * Class: numeric
+7. TimeBodyAccelerationStandardDeviationY
+ * Contains the mean of time domain body acceleration stadard deviation along Y axis
+ * Class: numeric
 8. TimeBodyAccelerationStandardDeviationZ
-9. TimeGravityAccelerationMeanX                                
-10. TimeGravityAccelerationMeanY                                
-11. TimeGravityAccelerationMeanZ                                
-12. TimeGravityAccelerationStandardDeviationX                   
-13. TimeGravityAccelerationStandardDeviationY                   
-14. TimeGravityAccelerationStandardDeviationZ                   
+ * Contains the mean of time domain body acceleration stadard deviation along Z axis
+ * Class: numeric
+9. TimeGravityAccelerationMeanX  
+ * Contains mean of time domain of gravity acceleration mean along X axis
+ * Class: numeric
+10. TimeGravityAccelerationMeanY 
+ * Contains mean of time domain of gravity acceleration mean along Y axis
+ * Class: numeric
+11. TimeGravityAccelerationMeanZ 
+ * Contains mean of time domain of gravity acceleration mean along Z axis
+ * Class: numeric
+12. TimeGravityAccelerationStandardDeviationX
+ * Contains the mean of time domain of gravity acceleration standard deviation along X axis
+ * Class: numeric
+13. TimeGravityAccelerationStandardDeviationY 
+ * Contains the mean of time domain of gravity acceleration standard deviation along Y axis
+ * Class: numeric
+14. TimeGravityAccelerationStandardDeviationZ
+ * Contains the mean of time domain of gravity acceleration standard deviation along Z axis
+ * Class: numeric
 15. TimeBodyAccelerationJerkMeanX                               
 16. TimeBodyAccelerationJerkMeanY                               
 17. TimeBodyAccelerationJerkMeanZ                               
