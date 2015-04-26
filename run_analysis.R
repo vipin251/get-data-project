@@ -70,7 +70,8 @@ View(tidy_data_means)
 write.table(tidy_data_means, file = "tidy_data.txt", row.names = F)
 
 #To the peer reviewer: code to read the output file produced by run_analysis.R
-# remove the "#" symbol and run the following line of code
+#is given below. Please remove the "#" symbol from the below line and run the 
+#code
 
-#tidy_output <- read.table("tidy_data.txt", header = T); View (tidy_output)
+tidy_output <- read.table("tidy_data.txt", header = T); View (tidy_output)
 
