@@ -41,11 +41,6 @@ Some information on the variable including:
  - Unit of measurement (if no unit of measurement list this as well)
  - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
 
-##Sources
-1. http://vita.had.co.nz/papers/tidy-data.pdf
-2. https://class.coursera.org/getdata-013/forum/thread?thread_id=30
-3. https://class.coursera.org/getdata-013/forum/thread?thread_id=31
-
 Variables in the final_mean_df tidy data set
 
 Variables from 3 to 84 start with time or freequency and ends with x, y or z
@@ -66,35 +61,35 @@ Variables from 3 to 84 start with time or freequency and ends with x, y or z
 14. timebodygyroscopemeanz
 15. timebodygyroscopejerkmeanx
 16. timebodygyroscopejerkmeany
-17 timebodygyroscopejerkmeanz
-18 timebodyaccelerationmagmean
-19 timegravityaccelerationmagmean
-20 timebodyaccelerationjerkmagmean
-21 timebodygyroscopemagmean
-22 timebodygyroscopejerkmagmean
-23 freequencybodyaccelerationmeanx
-24 freequencybodyaccelerationmeany
-25 freequencybodyaccelerationmeanz
-26 freequencybodyaccelerationmeanfreqx
-27 freequencybodyaccelerationmeanfreqy
-28 freequencybodyaccelerationmeanfreqz
-29 freequencybodyaccelerationjerkmeanx
-30 freequencybodyaccelerationjerkmeany
-31 freequencybodyaccelerationjerkmeanz
-32 freequencybodyaccelerationjerkmeanfreqx
-33 freequencybodyaccelerationjerkmeanfreqy
-34 freequencybodyaccelerationjerkmeanfreqz
-35 freequencybodygyroscopemeanx
-36 freequencybodygyroscopemeany
-37 freequencybodygyroscopemeanz
-38 freequencybodygyroscopemeanfreqx
-39 freequencybodygyroscopemeanfreqy
-40 freequencybodygyroscopemeanfreqz
-41 freequencybodyaccelerationmagmean
-42 freequencybodyaccelerationmagmeanfreq
-43 freequencybodybodyaccelerationjerkmagmean
-44 freequencybodybodyaccelerationjerkmagmeanfreq
-45 freequencybodybodygyroscopemagmean
+17. timebodygyroscopejerkmeanz
+18. timebodyaccelerationmagmean
+19. timegravityaccelerationmagmean
+20. timebodyaccelerationjerkmagmean
+21. timebodygyroscopemagmean
+22. timebodygyroscopejerkmagmean
+23. freequencybodyaccelerationmeanx
+24. freequencybodyaccelerationmeany
+25. freequencybodyaccelerationmeanz
+26. freequencybodyaccelerationmeanfreqx
+27. freequencybodyaccelerationmeanfreqy
+28. freequencybodyaccelerationmeanfreqz
+29. freequencybodyaccelerationjerkmeanx
+30. freequencybodyaccelerationjerkmeany
+31. freequencybodyaccelerationjerkmeanz
+32. freequencybodyaccelerationjerkmeanfreqx
+33. freequencybodyaccelerationjerkmeanfreqy
+34. freequencybodyaccelerationjerkmeanfreqz
+35. freequencybodygyroscopemeanx
+36. freequencybodygyroscopemeany
+37. freequencybodygyroscopemeanz
+38. freequencybodygyroscopemeanfreqx
+39. freequencybodygyroscopemeanfreqy
+40. freequencybodygyroscopemeanfreqz
+41. freequencybodyaccelerationmagmean
+42. freequencybodyaccelerationmagmeanfreq
+43. freequencybodybodyaccelerationjerkmagmean
+44. freequencybodybodyaccelerationjerkmagmeanfreq
+45. freequencybodybodygyroscopemagmean
 46 freequencybodybodygyroscopemagmeanfreq
 47 freequencybodybodygyroscopejerkmagmean
 48 freequencybodybodygyroscopejerkmagmeanfreq
@@ -130,3 +125,8 @@ Variables from 3 to 84 start with time or freequency and ends with x, y or z
 78 freequencybodyaccelerationmagstandarddeviation
 79 freequencybodybodyaccelerationjerkmagstandarddeviation 80 freequencybodybodygyroscopemagstandarddeviation
 81 freequencybodybodygyroscopejerkmagstandarddeviation 
+
+##Sources
+1. http://vita.had.co.nz/papers/tidy-data.pdf
+2. https://class.coursera.org/getdata-013/forum/thread?thread_id=30
+3. https://class.coursera.org/getdata-013/forum/thread?thread_id=31
