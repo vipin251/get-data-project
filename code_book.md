@@ -41,6 +41,7 @@ The run_analysis.R merges training and test data and creates a second, independe
  * Contains the activity label performed by the subject. 
  * There are six activities STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS performed by each subject. So 30 x 6 makes 180 different observations in different rows. 
  * Class: Character
+** Variable from 3 to 88 are mean values of readings from the gyroscope and accelerometer of Samsung Galaxy S II while performing above 6 activities. Values are normalized and bound within [-1, 1]**
 3. TimeBodyAccelerationMeanX
  * Contains the mean of time domain of body acceleration mean along X axis of the phone
  * Class: numeric
