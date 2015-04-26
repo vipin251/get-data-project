@@ -1,4 +1,5 @@
 #Require dplyr and data.table packages
+# Set UCI HAR Dataset folder as your working directory and run the script
 library(dplyr)
 library(data.table)
 #Copy all 8 files to your working directory and run this script 
