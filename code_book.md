@@ -128,6 +128,8 @@ Variables from 3 to 84 start with time or freequency and ends with x, y or z
 81 FreequencyBodyBodygyroscopeJerkMagnitudeStandardDeviation 
 
 ## Sources
-1. http://vita.had.co.nz/papers/tidy-data.pdf
-2. https://class.coursera.org/getdata-013/forum/thread?thread_id=30
-3. https://class.coursera.org/getdata-013/forum/thread?thread_id=31
+1. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+2. http://vita.had.co.nz/papers/tidy-data.pdf
+3. https://class.coursera.org/getdata-013/forum/thread?thread_id=30
+4. https://class.coursera.org/getdata-013/forum/thread?thread_id=31
+5. http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#identifiers
