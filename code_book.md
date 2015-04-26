@@ -50,13 +50,13 @@ The run_analysis.R merges training and test data and creates a second, independe
  * Contains the mean of time domain of body acceleration mean along X axis of the phone
  * Class: numeric
 6. TimeBodyAccelerationStandardDeviationX
- * Contains the mean of time domain body acceleration stadard deviation along X axis of the phone
+ * Contains the mean of time domain body acceleration standard deviation along X axis of the phone
  * Class: numeric
 7. TimeBodyAccelerationStandardDeviationY
- * Contains the mean of time domain body acceleration stadard deviation along Y axis of the phone
+ * Contains the mean of time domain body acceleration standard deviation along Y axis of the phone
  * Class: numeric
 8. TimeBodyAccelerationStandardDeviationZ
- * Contains the mean of time domain body acceleration stadard deviation along Z axis of the phone
+ * Contains the mean of time domain body acceleration standard deviation along Z axis of the phone
  * Class: numeric
 9. TimeGravityAccelerationMeanX  
  * Contains mean of time domain of gravity acceleration mean along X axis of the phone
