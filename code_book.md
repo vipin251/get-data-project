@@ -32,15 +32,6 @@ The run_analysis.R merges training and test data and creates a second, independe
  
 ## Description of the variables in the tidy_data.txt file
  - Dimensions of the dataset : 180 x 88
- - Summary of variables 
- - 
- 
-### Variable 1 (repeat this section for all variables in the dataset)
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
 
 ### Variables in the tidy_data_means/ tidy_data.txt set
 1. subject
@@ -48,97 +39,97 @@ Some information on the variable including:
   * Class of the variable: Integer
 2. activiy
  * Contains the activity label performed by the subject. 
- * There are six levels STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS. 
- * Class: Factors
+ * There are six activities STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS performed by each subject. So 30 x 6 makes 180 different observations in different rows. 
+ * Class: Character
 3. TimeBodyAccelerationMeanX
- * Contains the mean of time domain of body acceleration mean along X axis
+ * Contains the mean of time domain of body acceleration mean along X axis of the phone
  * Class: numeric
 4. TimeBodyAccelerationMeanY
- * Contains the mean of time domain of body acceleration mean along Y axis
+ * Contains the mean of time domain of body acceleration mean along Y axis of the phone
  * Class: numeric
 5. TimeBodyAccelerationMeanZ
- * Contains the mean of time domain of body acceleration mean along X axis
+ * Contains the mean of time domain of body acceleration mean along X axis of the phone
  * Class: numeric
 6. TimeBodyAccelerationStandardDeviationX
- * Contains the mean of time domain body acceleration stadard deviation along X axis
+ * Contains the mean of time domain body acceleration stadard deviation along X axis of the phone
  * Class: numeric
 7. TimeBodyAccelerationStandardDeviationY
- * Contains the mean of time domain body acceleration stadard deviation along Y axis
+ * Contains the mean of time domain body acceleration stadard deviation along Y axis of the phone
  * Class: numeric
 8. TimeBodyAccelerationStandardDeviationZ
- * Contains the mean of time domain body acceleration stadard deviation along Z axis
+ * Contains the mean of time domain body acceleration stadard deviation along Z axis of the phone
  * Class: numeric
 9. TimeGravityAccelerationMeanX  
- * Contains mean of time domain of gravity acceleration mean along X axis
+ * Contains mean of time domain of gravity acceleration mean along X axis of the phone
  * Class: numeric
 10. TimeGravityAccelerationMeanY 
- * Contains mean of time domain of gravity acceleration mean along Y axis
+ * Contains mean of time domain of gravity acceleration mean along Y axis of the phone
  * Class: numeric
 11. TimeGravityAccelerationMeanZ 
- * Contains mean of time domain of gravity acceleration mean along Z axis
+ * Contains mean of time domain of gravity acceleration mean along Z axis of the phone
  * Class: numeric
 12. TimeGravityAccelerationStandardDeviationX
- * Contains the mean of time domain of gravity acceleration standard deviation along X axis
+ * Contains the mean of time domain of gravity acceleration standard deviation along X axis of the phone
  * Class: numeric
 13. TimeGravityAccelerationStandardDeviationY 
- * Contains the mean of time domain of gravity acceleration standard deviation along Y axis
+ * Contains the mean of time domain of gravity acceleration standard deviation along Y axis of the phone
  * Class: numeric
 14. TimeGravityAccelerationStandardDeviationZ
- * Contains the mean of time domain of gravity acceleration standard deviation along Z axis
+ * Contains the mean of time domain of gravity acceleration standard deviation along Z axis of the phone
  * Class: numeric
 15. TimeBodyAccelerationJerkMeanX
- * Contains the mean of time domain of body acceleration jerk mean along X axis
+ * Contains the mean of time domain of body acceleration jerk mean along X axis of the phone
  * Class: numeric
 16. TimeBodyAccelerationJerkMeanY
- * Contains the mean of time domain of body acceleration jerk mean along Y axis
+ * Contains the mean of time domain of body acceleration jerk mean along Y axis of the phone
  * Class: numeric
 17. TimeBodyAccelerationJerkMeanZ
- * Contains the mean of time domain of body acceleration jerk mean along Z axis
+ * Contains the mean of time domain of body acceleration jerk mean along Z axis of the phone
  * Class: numeric
 18. TimeBodyAccelerationJerkStandardDeviationX
- * Contains the mean of time domain body acceleration jerk standard deviation along X axis
+ * Contains the mean of time domain body acceleration jerk standard deviation along X axis of the phone
  * class: numeric
 19. TimeBodyAccelerationJerkStandardDeviationY
- * Contains the mean of time domain body acceleration jerk standard deviation along Y axis
+ * Contains the mean of time domain body acceleration jerk standard deviation along Y axis of the phone
  * class: numeric
 20. TimeBodyAccelerationJerkStandardDeviationZ
- * Contains the mean of time domain body acceleration jerk standard deviation along Y axis
+ * Contains the mean of time domain body acceleration jerk standard deviation along Z axis of the phone
  * class: numeric
 21. TimeBodyGyroscopeMeanX
- * Contains the mean of time domain of body mean angular velocity from gyroscope along X axis
+ * Contains the mean of time domain of body mean angular velocity from gyroscope along X axis of the phone
  * class: numeric
 22. TimeBodyGyroscopeMeanY 
- * Contains the mean of time domain of body mean angular velocity from gyroscope along Y axis
+ * Contains the mean of time domain of body mean angular velocity from gyroscope along Y axis of the phone
  * class: numeric
 23. TimeBodyGyroscopeMeanZ
- * Contains the mean of time domain of body mean angular velocity from gyroscope along Z axis
+ * Contains the mean of time domain of body mean angular velocity from gyroscope along Z axis of the phone
  * class: numeric
 24. TimeBodyGyroscopeStandardDeviationX
- * Contains the mean of time domain of body stadard deviation of  angular velocity from gyroscope along X axis
+ * Contains the mean of time domain of body stadard deviation of  angular velocity from gyroscope along X axis of the phone
  * class: numeric
 25. TimeBodyGyroscopeStandardDeviationY
- * Contains the mean of time domain of body stadard deviation of  angular velocity from gyroscope along Y axis
+ * Contains the mean of time domain of body stadard deviation of  angular velocity from gyroscope along Y axis of the phone
  * class: numeric
 26. TimeBodyGyroscopeStandardDeviationZ
- * Contains the mean of time domain of body stadard deviation of  angular velocity from gyroscope along Z axis
+ * Contains the mean of time domain of body stadard deviation of  angular velocity from gyroscope along Z axis of the phone
  * class: numeric
 27. TimeBodyGyroscopeJerkMeanX
- * Contains the mean of time domain of angular velocity jerk signal mean along X axis
+ * Contains the mean of time domain of angular velocity jerk signal mean along X axis of the phone
  * Class: numeric
 28. TimeBodyGyroscopeJerkMeanY
- * Contains the mean of time domain of angular velocity jerk signal mean along Y axis
+ * Contains the mean of time domain of angular velocity jerk signal mean along Y axis of the phone
  * Class: numeric
 29. TimeBodyGyroscopeJerkMeanZ
- * Contains the mean of time domain of angular velocity jerk signal mean along Z axis
+ * Contains the mean of time domain of angular velocity jerk signal mean along Z axis of the phone
  * Class: numeric
 30. TimeBodyGyroscopeJerkStandardDeviationX
- * Contains the mean of time domain of angular velocity jerk signal standard deviation along X axis
+ * Contains the mean of time domain of angular velocity jerk signal standard deviation along X axis of the phone
  * Class: numeric
 31. TimeBodyGyroscopeJerkStandardDeviationY
- * Contains the mean of time domain of angular velocity jerk signal mean along Y axis
+ * Contains the mean of time domain of angular velocity jerk signal mean along Y axis of the phone
  * Class: numeric
 32. TimeBodyGyroscopeJerkStandardDeviationZ
- * Contains the mean of time domain of angular velocity jerk signal mean along Z axis
+ * Contains the mean of time domain of angular velocity jerk signal mean along Z axis of the phone
  * Class: numeric
 33. TimeBodyAccelerationMagnitudeMean
  * Contaians the mean of time domain of body mean acceleration magnitude
@@ -171,85 +162,85 @@ Some information on the variable including:
  * Contains the mean of time domain of body angular velocity magnitude standard deviation
  * Class: numeric
 43. FreequencyBodyAccelerationMeanX
- * Contains the mean of freequency domain of mean body acceleration along X axis
+ * Contains the mean of freequency domain of mean body acceleration along X axis of the phone
  * Class: numeric
 44. FreequencyBodyAccelerationMeanY
- * Contains the mean of freequency domain of mean body acceleration along Y axis
+ * Contains the mean of freequency domain of mean body acceleration along Y axis of the phone
  * Class: numeric
 45. FreequencyBodyAccelerationMeanZ
- * Contains the mean of freequency domain of mean body acceleration along Z axis
+ * Contains the mean of freequency domain of mean body acceleration along Z axis of the phone
  * Class: numeric
 46. FreequencyBodyAccelerationStandardDeviationX
- * Contains the mean of freequency domain of body acceleration standard deviation along X axis
+ * Contains the mean of freequency domain of body acceleration standard deviation along X axis of the phone
  * Class: numeric
 47. FreequencyBodyAccelerationStandardDeviationY
- * Contains the mean of freequency domain of body acceleration standard deviation along Y axis
+ * Contains the mean of freequency domain of body acceleration standard deviation along Y axis of the phone
  * Class: numeric
 48. FreequencyBodyAccelerationStandardDeviationZ
- * Contains the mean of freequency domain of body acceleration standard deviation along Z axis
+ * Contains the mean of freequency domain of body acceleration standard deviation along Z axis of the phone
  * Class: numeric
 49. FreequencyBodyAccelerationMeanFreequencyX
- * Contains the mean of freequency domain of body acceleration  mean freequency along X axis
+ * Contains the mean of freequency domain of body acceleration  mean freequency along X axis of the phone
  * Class: numeric
 50. FreequencyBodyAccelerationMeanFreequencyY
- * Contains the mean of freequency domain of body acceleration  mean freequency along Y axis
+ * Contains the mean of freequency domain of body acceleration  mean freequency along Y axis of the phone
  * Class: numeric
 51. FreequencyBodyAccelerationMeanFreequencyZ
- * Contains the mean of freequency domain of body acceleration  mean freequency along Z axis
+ * Contains the mean of freequency domain of body acceleration  mean freequency along Z axis of the phone
  * Class: numeric
 52. FreequencyBodyAccelerationJerkMeanX
- * Contains the mean of freequency domain of body acceleration  mean jerk signal along X axis
+ * Contains the mean of freequency domain of body acceleration  mean jerk signal along X axis of the phone
  * Class: numeric
 53. FreequencyBodyAccelerationJerkMeanY
- * Contains the mean of freequency domain of body acceleration  mean jerk signal along Y axis
+ * Contains the mean of freequency domain of body acceleration  mean jerk signal along Y axis of the phone
  * Class: numeric
 54. FreequencyBodyAccelerationJerkMeanZ
- * Contains the mean of freequency domain of body acceleration  mean jerk signal along Z axis
+ * Contains the mean of freequency domain of body acceleration  mean jerk signal along Z axis of the phone
  * Class: numeric
 55. FreequencyBodyAccelerationJerkStandardDeviationX
- * Contains the mean of freequency domain of  body acceleration  jerk signal standard deviation along X axis
+ * Contains the mean of freequency domain of  body acceleration  jerk signal standard deviation along X axis of the phone
  * Class: numeric
 56. FreequencyBodyAccelerationJerkStandardDeviationY
- * Contains the mean of freequency domain of body acceleration  jerk signal standard deviation along Y axis
+ * Contains the mean of freequency domain of body acceleration  jerk signal standard deviation along Y axis of the phone
  * Class: numeric
 57. FreequencyBodyAccelerationJerkStandardDeviationZ
- * Contains the mean of freequency domain of body acceleration  jerk signal standard deviation along Z axis
+ * Contains the mean of freequency domain of body acceleration  jerk signal standard deviation along Z axis of the phone
  * Class: numeric
 58. FreequencyBodyAccelerationJerkMeanFreequencyX
- * Contains the mean of freequency domain of body acceleration  jerk signal mean freequency along X axis
+ * Contains the mean of freequency domain of body acceleration  jerk signal mean freequency along X axis of the phone
  * Class: numeric
 59. FreequencyBodyAccelerationJerkMeanFreequencyY
- * Contains the mean of freequency domain of body acceleration  jerk signal mean freequency along Y axis
+ * Contains the mean of freequency domain of body acceleration  jerk signal mean freequency along Y axis of the phone
  * Class: numeric
 60. FreequencyBodyAccelerationJerkMeanFreequencyZ
- * Contains the mean of freequency domain of body acceleration  jerk signal mean freequency along Z axis
+ * Contains the mean of freequency domain of body acceleration  jerk signal mean freequency along Z axis of the phone
  * Class: numeric
 61. FreequencyBodyGyroscopeMeanX
- * Contains the mean of freequency domain of body angular velocity mean along X axis
+ * Contains the mean of freequency domain of body angular velocity mean along X axis of the phone
  * Class: numeric
 62. FreequencyBodyGyroscopeMeanY
- * Contains the mean of freequency domain of body angular velocity mean along Y axis
+ * Contains the mean of freequency domain of body angular velocity mean along Y axis of the phone
  * Class: numeric
 63. FreequencyBodyGyroscopeMeanZ
- * Contains the mean of freequency domain of body angular velocity mean along Z axis
+ * Contains the mean of freequency domain of body angular velocity mean along Z axis of the phone
  * Class: numeric
 64. FreequencyBodyGyroscopeStandardDeviationX
- * Contains the mean of freequency domain of body angular velocity standard deviation along X axis
+ * Contains the mean of freequency domain of body angular velocity standard deviation along X axis of the phone
  * Class: numeric
 65. FreequencyBodyGyroscopeStandardDeviationY
- * Contains the mean of freequency domain of body angular velocity standard deviation along Y axis
+ * Contains the mean of freequency domain of body angular velocity standard deviation along Y axis of the phone
  * Class: numeric
 66. FreequencyBodyGyroscopeStandardDeviationZ
- * Contains the mean of freequency domain of  body angular velocity standard deviation along Z axis
+ * Contains the mean of freequency domain of  body angular velocity standard deviation along Z axis of the phone
  * Class: numeric
 67. FreequencyBodyGyroscopeMeanFreequencyX
- * Contains the mean of freequency domain of body angular velocity mean freequency along X axis
+ * Contains the mean of freequency domain of body angular velocity mean freequency along X axis of the phone
  * Class: numeric
 68. FreequencyBodyGyroscopeMeanFreequencyY
- * Contains the mean of freequency domain of body angular velocity mean freequency along Y axis
+ * Contains the mean of freequency domain of body angular velocity mean freequency along Y axis of the phone
  * Class: numeric
 69. FreequencyBodyGyroscopeMeanFreequencyZ
- * Contains the mean of freequency domain of body angular velocity mean freequency along Z axis
+ * Contains the mean of freequency domain of body angular velocity mean freequency along Z axis of the phone
  * Class: numeric
 70. FreequencyBodyAccelerationMagnitudeMean
  * Contains the mean of freequency domain of body acceleration mean magnitude
@@ -308,6 +299,11 @@ Some information on the variable including:
 88. AngleZGravityMean
  * Contains the mean angle between Z axis and gravitational acceleration mean
  * Class: numeric
+
+Units of measurements
+ * Acceleration m/s2
+ * Angular velocity/Gyroscope rad/s2
+ * Value of gravitational acceleration 'g' 9.80665 m/s2
 
 
 ## Sources
