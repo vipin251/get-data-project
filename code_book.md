@@ -45,27 +45,16 @@ Some information on the variable including:
 
 Variables from 3 to 84 start with time or freequency and ends with x, y or z
 
-1. subject: 
-  * contains the id of the person performed the taskes. Value varies from 1 to 30. Each subject performed six activities
-  * Class of the variable: Integer
-2. activity:
-  * Contains the activity label performed by the subject. There are six levels STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS. 
-  * Class: Factors
 
-* Variables from 3 to 88 has some common feattures.
-  * Its the means of the variable described.
-  * Starts with "Time" :- represents the time domain
-  * Starts with Freequency:- represents the freequency domain.
-  * 
- 1. subject                                                     
- 2. activity                                                    
- 3. TimeBodyAccelerationMeanX                                   
- 4. TimeBodyAccelerationMeanY                                   
- 5. TimeBodyAccelerationMeanZ                                   
- 6. TimeBodyAccelerationStandardDeviationX                      
- 7. TimeBodyAccelerationStandardDeviationY                      
- 8. TimeBodyAccelerationStandardDeviationZ                      
- 9. TimeGravityAccelerationMeanX                                
+1. subject
+2. activiy
+3. TimeBodyAccelerationMeanX                                   
+4. TimeBodyAccelerationMeanY                                   
+5. TimeBodyAccelerationMeanZ                                   
+6. TimeBodyAccelerationStandardDeviationX                      
+7. TimeBodyAccelerationStandardDeviationY                      
+8. TimeBodyAccelerationStandardDeviationZ
+9. TimeGravityAccelerationMeanX                                
 10. TimeGravityAccelerationMeanY                                
 11. TimeGravityAccelerationMeanZ                                
 12. TimeGravityAccelerationStandardDeviationX                   
