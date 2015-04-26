@@ -31,7 +31,11 @@ The run_analysis.R merges training and test data and creates a second, independe
  - Dimensions of the dataset : 180 x 88
 
 ### Variables in the tidy_data_means/ tidy_data.txt set
- ** Variable from 3 to 88 are mean values of readings from the gyroscope and accelerometer of Samsung Galaxy S II while performing the activities. Values are normalized and bound within [-1, 1]**
+ ** Variable from 3 to 88 are mean values of features of each activity and each subject for readings from the gyroscope and accelerometer of Samsung Galaxy S II while performing the activities. For example if subject 1 performed the WALKING activity 10 times then each column contains the average value of the 10 readings for the features selected for that particular activity. Values are normalized and bound within [-1, 1]**
+ * Units of measurements (Ref 1: See bottom list given in Sources)
+  * Acceleration - m/s2
+  * Angular velocity/Gyroscope - rad/s2
+  * Value of gravitational acceleration 'g' -  9.80665 m/s2
  
 1. subject
  * contains the id of the person performed the taskes. Value varies from 1 to 30. Each subject performed six activities
@@ -298,12 +302,6 @@ The run_analysis.R merges training and test data and creates a second, independe
 88. AngleZGravityMean
  * Contains the mean angle between Z axis and gravitational acceleration mean
  * Class: numeric
-
-Units of measurements
- * Acceleration m/s2
- * Angular velocity/Gyroscope rad/s2
- * Value of gravitational acceleration 'g' 9.80665 m/s2
-
 
 ## Sources
 1. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
