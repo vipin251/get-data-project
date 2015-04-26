@@ -22,10 +22,11 @@ For each record it is provided:
 ###Guide to create the tidy data file
 * Download the data 
 * Unzipp the files to your working direcotry
+* Copy the features.txt, activity_labels.txt and files in the test and train folders (files in the inertia folders are not required) in to your working directory
 * Run the r script run_analysis.R
  
 ###Cleaning of the data
-The run_analysis merges training and test data and creates a second, independent tidy data set with the average of each variable for each activity and each subject. Please read the README.md available at the below link for more detailed description of the cleaning and merging process
+The run_analysis.R merges training and test data and creates a second, independent tidy data set with the average of each variable for each activity and each subject. Please read the README.md available at the below link for more detailed description of the cleaning and merging process
  [https://github.com/vipin251/get-data-project/blob/master/README.md]()
  
 ##Description of the variables in the tidy_data.txt file
