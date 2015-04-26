@@ -126,7 +126,8 @@ Variables from 3 to 84 start with time or freequency and ends with x, y or z
 79 FreequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation 
 80 FreequencyBodyBodygyroscopeMagnitudeStandardDeviation
 81 FreequencyBodyBodygyroscopeJerkMagnitudeStandardDeviation 
-##Sources
+
+## Sources
 1. http://vita.had.co.nz/papers/tidy-data.pdf
 2. https://class.coursera.org/getdata-013/forum/thread?thread_id=30
 3. https://class.coursera.org/getdata-013/forum/thread?thread_id=31
