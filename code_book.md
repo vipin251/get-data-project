@@ -1,84 +1,154 @@
-Variables in the final_mean_df tidy data set
+## Project Description
+The project uses the raw data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. Unzipp the file and read the readme.txt file to know in detail how raw data is generated. *This project aims to merge the test and train data sets and select only features containing mean and standard deviation from 561 availbale features, make it tidy according to Hadley Wickham's tidy data principles( Ref No. 2:List given at the bottom of this code book), add descriptive variable names and activity labesl, creates a second, independent tidy data set with the average of each variable for each activity and each subject*
+
+
+## Study design and data processing
+ 
+### Collection of the raw data 
+Please read the readme.txt available at the above link for more detailed description. 
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, data generated for 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz _(Copied from the readme.txt file from tha above link)_.
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. _(Copied from the readme.txt file from tha above link)_ .
+
+For each record it is provided:
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+ 
+
+ 
+### Guide to create the tidy data file
+* Download the data 
+* Unzipp the files to your working direcotry
+* Copy the features.txt, activity_labels.txt and files in the test and train folders (files in the inertia folders are not required) in to your working directory
+* Run the r script run_analysis.R
+ 
+### Cleaning of the data
+The run_analysis.R merges training and test data and creates a second, independent tidy data set with the average of each variable for each activity and each subject. Please read the README.md available at the below link for more detailed description of the cleaning and merging process
+ [https://github.com/vipin251/get-data-project/blob/master/README.md]()
+ 
+## Description of the variables in the tidy_data.txt file
+ - Dimensions of the dataset : 180 x 88
+ - Summary of variables 
+ - 
+ 
+### Variable 1 (repeat this section for all variables in the dataset)
+Some information on the variable including:
+ - Class of the variable
+ - Unique values/levels of the variable
+ - Unit of measurement (if no unit of measurement list this as well)
+ - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
+
+### Variables in the final_mean_df tidy data set
 
 Variables from 3 to 84 start with time or freequency and ends with x, y or z
 
-1. subject
-2. activity
-3. timebodyaccelerationmeanx
-4. timebodyaccelerationmeany
-5. timebodyaccelerationmeanz
-6. timegravityaccelerationmeanx
-7. timegravityaccelerationmeany
-8. timegravityaccelerationmeanz
-9. timebodyaccelerationjerkmeanx
-10. timebodyaccelerationjerkmeany
-11. timebodyaccelerationjerkmeanz
-12. timebodygyroscopemeanx
-13. timebodygyroscopemeany
-14. timebodygyroscopemeanz
-15. timebodygyroscopejerkmeanx
-16. timebodygyroscopejerkmeany
-17 timebodygyroscopejerkmeanz
-18 timebodyaccelerationmagmean
-19 timegravityaccelerationmagmean
-20 timebodyaccelerationjerkmagmean
-21 timebodygyroscopemagmean
-22 timebodygyroscopejerkmagmean
-23 freequencybodyaccelerationmeanx
-24 freequencybodyaccelerationmeany
-25 freequencybodyaccelerationmeanz
-26 freequencybodyaccelerationmeanfreqx
-27 freequencybodyaccelerationmeanfreqy
-28 freequencybodyaccelerationmeanfreqz
-29 freequencybodyaccelerationjerkmeanx
-30 freequencybodyaccelerationjerkmeany
-31 freequencybodyaccelerationjerkmeanz
-32 freequencybodyaccelerationjerkmeanfreqx
-33 freequencybodyaccelerationjerkmeanfreqy
-34 freequencybodyaccelerationjerkmeanfreqz
-35 freequencybodygyroscopemeanx
-36 freequencybodygyroscopemeany
-37 freequencybodygyroscopemeanz
-38 freequencybodygyroscopemeanfreqx
-39 freequencybodygyroscopemeanfreqy
-40 freequencybodygyroscopemeanfreqz
-41 freequencybodyaccelerationmagmean
-42 freequencybodyaccelerationmagmeanfreq
-43 freequencybodybodyaccelerationjerkmagmean
-44 freequencybodybodyaccelerationjerkmagmeanfreq
-45 freequencybodybodygyroscopemagmean
-46 freequencybodybodygyroscopemagmeanfreq
-47 freequencybodybodygyroscopejerkmagmean
-48 freequencybodybodygyroscopejerkmagmeanfreq
-49 timebodyaccelerationstandarddeviationx
-50 timebodyaccelerationstandarddeviationy
-51 timebodyaccelerationstandarddeviationz
-52 timegravityaccelerationstandarddeviationx
-53 timegravityaccelerationstandarddeviationy
-54 timegravityaccelerationstandarddeviationz
-55 timebodyaccelerationjerkstandarddeviationx
-56 timebodyaccelerationjerkstandarddeviationy
-57 timebodyaccelerationjerkstandarddeviationz
-58 timebodygyroscopestandarddeviationx
-59 timebodygyroscopestandarddeviationy
-60 timebodygyroscopestandarddeviationz
-61 timebodygyroscopejerkstandarddeviationx
-62 timebodygyroscopejerkstandarddeviationy
-63 timebodygyroscopejerkstandarddeviationz
-64 timebodyaccelerationmagstandarddeviation
-65 timegravityaccelerationmagstandarddeviation
-66 timebodyaccelerationjerkmagstandarddeviation
-67 timebodygyroscopemagstandarddeviation
-68 timebodygyroscopejerkmagstandarddeviation
-69 freequencybodyaccelerationstandarddeviationx
-70 freequencybodyaccelerationstandarddeviationy
-71 freequencybodyaccelerationstandarddeviationz
-72 freequencybodyaccelerationjerkstandarddeviationx
-73 freequencybodyaccelerationjerkstandarddeviationy
-74 freequencybodyaccelerationjerkstandarddeviationz
-75 freequencybodygyroscopestandarddeviationx
-76 freequencybodygyroscopestandarddeviationy
-77 freequencybodygyroscopestandarddeviationz
-78 freequencybodyaccelerationmagstandarddeviation
-79 freequencybodybodyaccelerationjerkmagstandarddeviation 80 freequencybodybodygyroscopemagstandarddeviation
-81 freequencybodybodygyroscopejerkmagstandarddeviation 
+1. subject: 
+  * contains the id of the person performed the taskes. Value varies from 1 to 30. Each subject performed six activities
+  * Class of the variable: Integer
+2. activity:
+  * Contains the activity label performed by the subject. There are six levels STANDING, SITTING, LAYING, WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS. 
+  * Class: Factors
+
+* Variables from 3 to 88 has some common feattures.
+  * Its the means of the variable described.
+  * Starts with "Time" :- represents the time domain
+  * Starts with Freequency:- represents the freequency domain.
+  * 
+ 1. subject                                                     
+ 2. activity                                                    
+ 3. TimeBodyAccelerationMeanX                                   
+ 4. TimeBodyAccelerationMeanY                                   
+ 5. TimeBodyAccelerationMeanZ                                   
+ 6. TimeBodyAccelerationStandardDeviationX                      
+ 7. TimeBodyAccelerationStandardDeviationY                      
+ 8. TimeBodyAccelerationStandardDeviationZ                      
+ 9. TimeGravityAccelerationMeanX                                
+10. TimeGravityAccelerationMeanY                                
+11. TimeGravityAccelerationMeanZ                                
+12. TimeGravityAccelerationStandardDeviationX                   
+13. TimeGravityAccelerationStandardDeviationY                   
+14. TimeGravityAccelerationStandardDeviationZ                   
+15. TimeBodyAccelerationJerkMeanX                               
+16. TimeBodyAccelerationJerkMeanY                               
+17. TimeBodyAccelerationJerkMeanZ                               
+18. TimeBodyAccelerationJerkStandardDeviationX                  
+19. TimeBodyAccelerationJerkStandardDeviationY                  
+20. TimeBodyAccelerationJerkStandardDeviationZ                  
+21. TimeBodyGyroscopeMeanX                                      
+22. TimeBodyGyroscopeMeanY                                      
+23. TimeBodyGyroscopeMeanZ                                      
+24. TimeBodyGyroscopeStandardDeviationX                         
+25. TimeBodyGyroscopeStandardDeviationY                         
+26. TimeBodyGyroscopeStandardDeviationZ                         
+27. TimeBodyGyroscopeJerkMeanX                                  
+28. TimeBodyGyroscopeJerkMeanY                                  
+29. TimeBodyGyroscopeJerkMeanZ                                  
+30. TimeBodyGyroscopeJerkStandardDeviationX                     
+31. TimeBodyGyroscopeJerkStandardDeviationY                     
+32. TimeBodyGyroscopeJerkStandardDeviationZ                     
+33. TimeBodyAccelerationMagnitudeMean                           
+34. TimeBodyAccelerationMagnitudeStandardDeviation              
+35. TimeGravityAccelerationMagnitudeMean                        
+36. TimeGravityAccelerationMagnitudeStandardDeviation           
+37. TimeBodyAccelerationJerkMagnitudeMean                       
+38. TimeBodyAccelerationJerkMagnitudeStandardDeviation          
+39. TimeBodyGyroscopeMagnitudeMean                              
+40. TimeBodyGyroscopeMagnitudeStandardDeviation                 
+41. TimeBodyGyroscopeJerkMagnitudeMean                          
+42. TimeBodyGyroscopeJerkMagnitudeStandardDeviation             
+43. FreequencyBodyAccelerationMeanX                             
+44 .FreequencyBodyAccelerationMeanY                             
+45. FreequencyBodyAccelerationMeanZ                             
+46. FreequencyBodyAccelerationStandardDeviationX                
+47. FreequencyBodyAccelerationStandardDeviationY                
+48. FreequencyBodyAccelerationStandardDeviationZ                
+49. FreequencyBodyAccelerationMeanFreequencyX                   
+50. FreequencyBodyAccelerationMeanFreequencyY                   
+51. FreequencyBodyAccelerationMeanFreequencyZ                   
+52. FreequencyBodyAccelerationJerkMeanX                         
+53. FreequencyBodyAccelerationJerkMeanY                         
+54. FreequencyBodyAccelerationJerkMeanZ                         
+55. FreequencyBodyAccelerationJerkStandardDeviationX            
+56. FreequencyBodyAccelerationJerkStandardDeviationY            
+57. FreequencyBodyAccelerationJerkStandardDeviationZ            
+58. FreequencyBodyAccelerationJerkMeanFreequencyX               
+59. FreequencyBodyAccelerationJerkMeanFreequencyY               
+60. FreequencyBodyAccelerationJerkMeanFreequencyZ               
+61. FreequencyBodyGyroscopeMeanX                                
+62. FreequencyBodyGyroscopeMeanY                                
+63. FreequencyBodyGyroscopeMeanZ                                
+64. FreequencyBodyGyroscopeStandardDeviationX                   
+65. FreequencyBodyGyroscopeStandardDeviationY                   
+66. FreequencyBodyGyroscopeStandardDeviationZ                   
+67. FreequencyBodyGyroscopeMeanFreequencyX                      
+68. FreequencyBodyGyroscopeMeanFreequencyY                      
+69. FreequencyBodyGyroscopeMeanFreequencyZ                      
+70. FreequencyBodyAccelerationMagnitudeMean                     
+71. FreequencyBodyAccelerationMagnitudeStandardDeviation        
+72. FreequencyBodyAccelerationMagnitudeMeanFreequency           
+73. FreequencyBodyBodyAccelerationJerkMagnitudeMean             
+74. FreequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation
+75. FreequencyBodyBodyAccelerationJerkMagnitudeMeanFreequency   
+76. FreequencyBodyBodyGyroscopeMagnitudeMean                    
+77. FreequencyBodyBodyGyroscopeMagnitudeStandardDeviation       
+78. FreequencyBodyBodyGyroscopeMagnitudeMeanFreequency          
+79. FreequencyBodyBodyGyroscopeJerkMagnitudeMean                
+80. FreequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation   
+81. FreequencyBodyBodyGyroscopeJerkMagnitudeMeanFreequency      
+82. AngleTimeBodyAccelerationMeanGravity                        
+83. AngleTimeBodyAccelerationJerkMeanGravityMean                
+84. AngleTimeBodyGyroscopeMeanGravityMean                       
+85. AngleTimeBodyGyroscopeJerkMeanGravityMean                   
+86. AngleXGravityMean                                           
+87. AngleYGravityMean                                           
+88. AngleZGravityMean
+
+## Sources
+1. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+2. http://vita.had.co.nz/papers/tidy-data.pdf
+3. https://class.coursera.org/getdata-013/forum/thread?thread_id=30
+4. https://class.coursera.org/getdata-013/forum/thread?thread_id=31
+5. http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#identifiers
