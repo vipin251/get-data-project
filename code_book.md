@@ -145,6 +145,7 @@ Variables from 3 to 84 start with time or freequency and ends with x, y or z
 86. AngleXGravityMean                                           
 87. AngleYGravityMean                                           
 88. AngleZGravityMean
+Final version unmodified
 
 ## Sources
 1. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
