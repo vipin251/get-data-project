@@ -5,13 +5,13 @@ library(data.table)
 features <- read.table("features.txt", header = F, stringsAsFactors = F, sep = " ")
 labels <- read.table("activity_labels.txt", header = F, stringsAsFactors = F, sep = " ")
 #read test files 
-x_subject_test <- read.table("subject_test.txt", header = F, stringsAsFactors = F, sep = " ")
-x_test <- read.table("X_test.txt", header = F, stringsAsFactors = F)
-y_test <- read.table("y_test.txt", header = F, stringsAsFactors = F)
+x_subject_test <- read.table("./test/subject_test.txt", header = F, stringsAsFactors = F, sep = " ")
+x_test <- read.table("./test/X_test.txt", header = F, stringsAsFactors = F)
+y_test <- read.table("./test/y_test.txt", header = F, stringsAsFactors = F)
 #read train files
-x_subject_train <- read.table("subject_train.txt", header = F, stringsAsFactors = F, sep = " ")
-x_train <- read.table("X_train.txt", header = F, stringsAsFactors = F)
-y_train <- read.table("y_train.txt", header = F, stringsAsFactors = F)
+x_subject_train <- read.table("./train/subject_train.txt", header = F, stringsAsFactors = F, sep = " ")
+x_train <- read.table("./train/X_train.txt", header = F, stringsAsFactors = F)
+y_train <- read.table("./train/y_train.txt", header = F, stringsAsFactors = F)
 
 #Col bind activity id and subject id test files
 test_with_activity_id <- cbind(y_test, x_test)
