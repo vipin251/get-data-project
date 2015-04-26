@@ -103,75 +103,211 @@ Some information on the variable including:
 20. TimeBodyAccelerationJerkStandardDeviationZ
  * Contains the mean of time domain body acceleration jerk standard deviation along Y axis
  * class: numeric
-21. TimeBodyGyroscopeMeanX                                      
-22. TimeBodyGyroscopeMeanY                                      
-23. TimeBodyGyroscopeMeanZ                                      
-24. TimeBodyGyroscopeStandardDeviationX                         
-25. TimeBodyGyroscopeStandardDeviationY                         
-26. TimeBodyGyroscopeStandardDeviationZ                         
-27. TimeBodyGyroscopeJerkMeanX                                  
-28. TimeBodyGyroscopeJerkMeanY                                  
-29. TimeBodyGyroscopeJerkMeanZ                                  
-30. TimeBodyGyroscopeJerkStandardDeviationX                     
-31. TimeBodyGyroscopeJerkStandardDeviationY                     
-32. TimeBodyGyroscopeJerkStandardDeviationZ                     
-33. TimeBodyAccelerationMagnitudeMean                           
-34. TimeBodyAccelerationMagnitudeStandardDeviation              
-35. TimeGravityAccelerationMagnitudeMean                        
-36. TimeGravityAccelerationMagnitudeStandardDeviation           
-37. TimeBodyAccelerationJerkMagnitudeMean                       
-38. TimeBodyAccelerationJerkMagnitudeStandardDeviation          
-39. TimeBodyGyroscopeMagnitudeMean                              
-40. TimeBodyGyroscopeMagnitudeStandardDeviation                 
-41. TimeBodyGyroscopeJerkMagnitudeMean                          
-42. TimeBodyGyroscopeJerkMagnitudeStandardDeviation             
-43. FreequencyBodyAccelerationMeanX                             
-44. FreequencyBodyAccelerationMeanY                             
-45. FreequencyBodyAccelerationMeanZ                             
-46. FreequencyBodyAccelerationStandardDeviationX                
-47. FreequencyBodyAccelerationStandardDeviationY                
-48. FreequencyBodyAccelerationStandardDeviationZ                
-49. FreequencyBodyAccelerationMeanFreequencyX                   
-50. FreequencyBodyAccelerationMeanFreequencyY                   
-51. FreequencyBodyAccelerationMeanFreequencyZ                   
-52. FreequencyBodyAccelerationJerkMeanX                         
-53. FreequencyBodyAccelerationJerkMeanY                         
-54. FreequencyBodyAccelerationJerkMeanZ                         
-55. FreequencyBodyAccelerationJerkStandardDeviationX            
-56. FreequencyBodyAccelerationJerkStandardDeviationY            
-57. FreequencyBodyAccelerationJerkStandardDeviationZ            
-58. FreequencyBodyAccelerationJerkMeanFreequencyX               
-59. FreequencyBodyAccelerationJerkMeanFreequencyY               
-60. FreequencyBodyAccelerationJerkMeanFreequencyZ               
-61. FreequencyBodyGyroscopeMeanX                                
-62. FreequencyBodyGyroscopeMeanY                                
-63. FreequencyBodyGyroscopeMeanZ                                
-64. FreequencyBodyGyroscopeStandardDeviationX                   
-65. FreequencyBodyGyroscopeStandardDeviationY                   
-66. FreequencyBodyGyroscopeStandardDeviationZ                   
-67. FreequencyBodyGyroscopeMeanFreequencyX                      
-68. FreequencyBodyGyroscopeMeanFreequencyY                      
-69. FreequencyBodyGyroscopeMeanFreequencyZ                      
-70. FreequencyBodyAccelerationMagnitudeMean                     
-71. FreequencyBodyAccelerationMagnitudeStandardDeviation        
-72. FreequencyBodyAccelerationMagnitudeMeanFreequency           
-73. FreequencyBodyBodyAccelerationJerkMagnitudeMean             
+21. TimeBodyGyroscopeMeanX
+ * Contains the mean of time domain of body mean angular velocity from gyroscope along X axis
+ * class: numeric
+22. TimeBodyGyroscopeMeanY 
+ * Contains the mean of time domain of body mean angular velocity from gyroscope along Y axis
+ * class: numeric
+23. TimeBodyGyroscopeMeanZ
+ * Contains the mean of time domain of body mean angular velocity from gyroscope along Z axis
+ * class: numeric
+24. TimeBodyGyroscopeStandardDeviationX
+ * Contains the mean of time domain of body stadard deviation of  angular velocity from gyroscope along X axis
+ * class: numeric
+25. TimeBodyGyroscopeStandardDeviationY
+ * Contains the mean of time domain of body stadard deviation of  angular velocity from gyroscope along Y axis
+ * class: numeric
+26. TimeBodyGyroscopeStandardDeviationZ
+ * Contains the mean of time domain of body stadard deviation of  angular velocity from gyroscope along Z axis
+ * class: numeric
+27. TimeBodyGyroscopeJerkMeanX
+ * Contains the mean of time domain of angular velocity jerk signal mean along X axis
+ * Class: numeric
+28. TimeBodyGyroscopeJerkMeanY
+ * Contains the mean of time domain of angular velocity jerk signal mean along Y axis
+ * Class: numeric
+29. TimeBodyGyroscopeJerkMeanZ
+ * Contains the mean of time domain of angular velocity jerk signal mean along Z axis
+ * Class: numeric
+30. TimeBodyGyroscopeJerkStandardDeviationX
+ * Contains the mean of time domain of angular velocity jerk signal standard deviation along X axis
+ * Class: numeric
+31. TimeBodyGyroscopeJerkStandardDeviationY
+ * Contains the mean of time domain of angular velocity jerk signal mean along Y axis
+ * Class: numeric
+32. TimeBodyGyroscopeJerkStandardDeviationZ
+ * Contains the mean of time domain of angular velocity jerk signal mean along Z axis
+ * Class: numeric
+33. TimeBodyAccelerationMagnitudeMean
+ * Contaians the mean of time domain of body mean acceleration magnitude
+ * Class: numeric
+34. TimeBodyAccelerationMagnitudeStandardDeviation
+ * Contaians the mean of time domain of body  acceleration magnitude standard deviation
+ * Class: numeric 
+35. TimeGravityAccelerationMagnitudeMean
+ * Contains the mean of time domain of mean gravity acceleration
+ * Class: numeric
+36. TimeGravityAccelerationMagnitudeStandardDeviation
+ * Contains the mean of time domain of  gravity acceleration standard deviation
+ * Class: numeric
+37. TimeBodyAccelerationJerkMagnitudeMean
+ * Contains the mean of time domain of body acceleration jerk signals magnitude mean
+ * Class: numeric
+38. TimeBodyAccelerationJerkMagnitudeStandardDeviation
+ * Contains the mean of standard deviation of time domain of body acceleration jerk signals magnitude
+ * Class: numeric
+39. TimeBodyGyroscopeMagnitudeMean
+ * Contains the mean of time domain body angular velocity magnitude mean
+ * Class: numeric
+40. TimeBodyGyroscopeMagnitudeStandardDeviation
+ * Contains the mean of time domain of body angular velocity magnitude standard deviation
+ * Class: numeric
+41. TimeBodyGyroscopeJerkMagnitudeMean
+ * Contains the mean of time domain body angular velocity jerk signals mean magnitude
+ * Class: numeric
+42. TimeBodyGyroscopeJerkMagnitudeStandardDeviation
+ * Contains the mean of time domain of body angular velocity magnitude standard deviation
+ * Class: numeric
+43. FreequencyBodyAccelerationMeanX
+ * Contains the mean of freequency domain of mean body acceleration along X axis
+ * Class: numeric
+44. FreequencyBodyAccelerationMeanY
+ * Contains the mean of freequency domain of mean body acceleration along Y axis
+ * Class: numeric
+45. FreequencyBodyAccelerationMeanZ
+ * Contains the mean of freequency domain of mean body acceleration along Z axis
+ * Class: numeric
+46. FreequencyBodyAccelerationStandardDeviationX
+ * Contains the mean of freequency domain of body acceleration standard deviation along X axis
+ * Class: numeric
+47. FreequencyBodyAccelerationStandardDeviationY
+ * Contains the mean of freequency domain of body acceleration standard deviation along Y axis
+ * Class: numeric
+48. FreequencyBodyAccelerationStandardDeviationZ
+ * Contains the mean of freequency domain of body acceleration standard deviation along Z axis
+ * Class: numeric
+49. FreequencyBodyAccelerationMeanFreequencyX
+ * Contains the mean of freequency domain of body acceleration  mean freequency along X axis
+ * Class: numeric
+50. FreequencyBodyAccelerationMeanFreequencyY
+ * Contains the mean of freequency domain of body acceleration  mean freequency along Y axis
+ * Class: numeric
+51. FreequencyBodyAccelerationMeanFreequencyZ
+ * Contains the mean of freequency domain of body acceleration  mean freequency along Z axis
+ * Class: numeric
+52. FreequencyBodyAccelerationJerkMeanX
+ * Contains the mean of freequency domain of body acceleration  mean jerk signal along X axis
+ * Class: numeric
+53. FreequencyBodyAccelerationJerkMeanY
+ * Contains the mean of freequency domain of body acceleration  mean jerk signal along Y axis
+ * Class: numeric
+54. FreequencyBodyAccelerationJerkMeanZ
+ * Contains the mean of freequency domain of body acceleration  mean jerk signal along Z axis
+ * Class: numeric
+55. FreequencyBodyAccelerationJerkStandardDeviationX
+ * Contains the mean of freequency domain of  body acceleration  jerk signal standard deviation along X axis
+ * Class: numeric
+56. FreequencyBodyAccelerationJerkStandardDeviationY
+ * Contains the mean of freequency domain of body acceleration  jerk signal standard deviation along Y axis
+ * Class: numeric
+57. FreequencyBodyAccelerationJerkStandardDeviationZ
+ * Contains the mean of freequency domain of body acceleration  jerk signal standard deviation along Z axis
+ * Class: numeric
+58. FreequencyBodyAccelerationJerkMeanFreequencyX
+ * Contains the mean of freequency domain of body acceleration  jerk signal mean freequency along X axis
+ * Class: numeric
+59. FreequencyBodyAccelerationJerkMeanFreequencyY
+ * Contains the mean of freequency domain of body acceleration  jerk signal mean freequency along Y axis
+ * Class: numeric
+60. FreequencyBodyAccelerationJerkMeanFreequencyZ
+ * Contains the mean of freequency domain of body acceleration  jerk signal mean freequency along Z axis
+ * Class: numeric
+61. FreequencyBodyGyroscopeMeanX
+ * Contains the mean of freequency domain of body angular velocity mean along X axis
+ * Class: numeric
+62. FreequencyBodyGyroscopeMeanY
+* Contains the mean of freequency domain of body angular velocity mean along Y axis
+ * Class: numeric
+63. FreequencyBodyGyroscopeMeanZ
+ * Contains the mean of freequency domain of body angular velocity mean along Z axis
+ * Class: numeric
+64. FreequencyBodyGyroscopeStandardDeviationX
+ * Contains the mean of freequency domain of body angular velocity standard deviation along X axis
+ * Class: numeric
+65. FreequencyBodyGyroscopeStandardDeviationY
+ * Contains the mean of freequency domain of body angular velocity standard deviation along Y axis
+ * Class: numeric
+66. FreequencyBodyGyroscopeStandardDeviationZ
+ * Contains the mean of freequency domain of  body angular velocity standard deviation along Z axis
+ * Class: numeric
+67. FreequencyBodyGyroscopeMeanFreequencyX
+ * Contains the mean of freequency domain of body angular velocity mean freequency along X axis
+ * Class: numeric
+68. FreequencyBodyGyroscopeMeanFreequencyY
+ * Contains the mean of freequency domain of body angular velocity mean freequency along Y axis
+ * Class: numeric
+69. FreequencyBodyGyroscopeMeanFreequencyZ
+ * Contains the mean of freequency domain of body angular velocity mean freequency along Z axis
+ * Class: numeric
+70. FreequencyBodyAccelerationMagnitudeMean
+ * Contains the mean of freequency domain of body acceleration mean magnitude
+ * Class: numeric
+71. FreequencyBodyAccelerationMagnitudeStandardDeviation
+ * Contains the mean of freequency domain of body acceleration magnitude standard deviation
+ * Class: numeric
+72. FreequencyBodyAccelerationMagnitudeMeanFreequency
+ * Contains the mean of freequency domain of body acceleration mean freequency magnitude
+ * Class: numeric
+73. FreequencyBodyBodyAccelerationJerkMagnitudeMean
+ * Contains the mean of freequency domain of body acceleration mean freequency magnitude
+ * Class: numeric
 74. FreequencyBodyBodyAccelerationJerkMagnitudeStandardDeviation
-75. FreequencyBodyBodyAccelerationJerkMagnitudeMeanFreequency   
-76. FreequencyBodyBodyGyroscopeMagnitudeMean                    
-77. FreequencyBodyBodyGyroscopeMagnitudeStandardDeviation       
-78. FreequencyBodyBodyGyroscopeMagnitudeMeanFreequency          
-79. FreequencyBodyBodyGyroscopeJerkMagnitudeMean                
-80. FreequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation   
-81. FreequencyBodyBodyGyroscopeJerkMagnitudeMeanFreequency      
-82. AngleTimeBodyAccelerationMeanGravity                        
-83. AngleTimeBodyAccelerationJerkMeanGravityMean                
-84. AngleTimeBodyGyroscopeMeanGravityMean                       
-85. AngleTimeBodyGyroscopeJerkMeanGravityMean                   
-86. AngleXGravityMean                                           
-87. AngleYGravityMean                                           
+ * Contains the mean of freequency domain of body acceleration jerk signal magnitude standard deviation
+ * Class: numeric
+75. FreequencyBodyBodyAccelerationJerkMagnitudeMeanFreequency
+ * Contains the mean of freequency domain of body acceleration jerk signal magnitude mean freequency
+ * Class: numeric
+76. FreequencyBodyBodyGyroscopeMagnitudeMean
+ * Contains the mean of freequency domain of body angular velocity magnitude mean
+ * Class: numeric
+77. FreequencyBodyBodyGyroscopeMagnitudeStandardDeviation
+ * Contains the mean of freequency domain of body angular velocity magnitude standard deviation
+ * Class: numeric
+78. FreequencyBodyBodyGyroscopeMagnitudeMeanFreequency 
+ * Contains the mean of freequency domain of body angular velocity mean freequency magnitude
+ * Class: numeric
+79. FreequencyBodyBodyGyroscopeJerkMagnitudeMean 
+ * Contains the mean of freequency domain of body angular velocity mean jerk signal magnitude
+ * Class: numeric
+80. FreequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation
+ * Contains the mean of freequency domain of body angular velocity jerk signal magnitude standard deviation
+ * Class: numeric
+81. FreequencyBodyBodyGyroscopeJerkMagnitudeMeanFreequency
+ * Contains the mean of freequency domain of body angular velocity jerk signal magnitude mean freequency
+ * Class: numeric
+82. AngleTimeBodyAccelerationMeanGravity
+ * Contains the mean angle between time domain of body acceleraion mean and gravitational acceleration
+ * Class: numeric
+83. AngleTimeBodyAccelerationJerkMeanGravityMean
+ * Contains the mean angle between time domain of body acceleraion mean and gravitational acceleration mean
+ * Class: numeric
+84. AngleTimeBodyGyroscopeMeanGravityMean
+ * Contains the mean angle between time domain of body angular velocity mean and gravitational acceleration mean
+ * Class: numeric
+85. AngleTimeBodyGyroscopeJerkMeanGravityMean
+ * Contains the mean angle between time domain of body angular velocity mean jerk signal  and gravitational acceleration mean
+ * Class: numeric
+86. AngleXGravityMean 
+ * Contains the mean angle between X axis and gravitational acceleration mean
+ * Class: numeric
+87. AngleYGravityMean
+ * Contains the mean angle between Y axis and gravitational acceleration mean
+ * Class: numeric
 88. AngleZGravityMean
-Final version unmodified
+ * Contains the mean angle between Z axis and gravitational acceleration mean
+ * Class: numeric
+
 
 ## Sources
 1. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
