@@ -25,7 +25,7 @@ For each record it is provided:
 * Files in the Inertial Signals folders are not considered in this script
  
 ### Cleaning of the data
-The run_analysis.R merges training and test data and creates a second, independent tidy data set with the average of each variable for each activity and each subject. Please read the README.md available [here] (https://github.com/vipin251/get-data-project/blob/master/README.md) the below link for more detailed description of the cleaning and merging process
+The run_analysis.R merges training and test data and creates a second, independent tidy data set with the average of each variable for each activity and each subject. Please read the README.md available [here] (https://github.com/vipin251/get-data-project/blob/master/README.md) for more detailed description of the cleaning and merging process
  
 ## Description of the variables in the tidy_data.txt file
  - Dimensions of the dataset : 180 x 88
