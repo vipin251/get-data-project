@@ -50,7 +50,7 @@ filtered <- filter((merged_df), subject == i)
 temp <- as.data.table(filtered)[, lapply(.SD, mean), by=activity]
 tidy_data_means <- rbind(tidy_data_means, temp)
 }
-#Clean column names and make it descriptive and lower case
+#Clean column names and make it descriptive 
 bad_colnames <- names(tidy_data_means)
 bad_colnames <- gsub("^t", "Time", bad_colnames)
 bad_colnames <- gsub("^f", "Freequency", bad_colnames)
