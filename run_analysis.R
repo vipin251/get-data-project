@@ -2,7 +2,7 @@
 # Set UCI HAR Dataset folder as your working directory and run the script
 library(dplyr)
 library(data.table)
-#Copy all 8 files to your working directory and run this script 
+
 #read  features and labels 
 features <- read.table("features.txt", header = F, stringsAsFactors = F, sep = " ")
 labels <- read.table("activity_labels.txt", header = F, stringsAsFactors = F, sep = " ")
